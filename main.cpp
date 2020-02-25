@@ -28,8 +28,11 @@ struct event
 int main() 
 {
   timeOfDay t;
-
-
+  t.Hour = 7;
+  t.Minute = 11;
+  t.Second = 17;
+cout << "\nCurrent Time: " << endl;
+cout << t.Hour << ":" << t.Minute << ":" << t.Second << endl;
 
   return 0;
 }
