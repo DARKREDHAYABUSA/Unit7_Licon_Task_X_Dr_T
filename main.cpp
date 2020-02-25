@@ -27,12 +27,31 @@ struct event
 
 int main() 
 {
-  timeOfDay t;
-  t.Hour = 7;
+  timeOfDay t; //declare instance of the struct
+  t.Hour = 7; //put data in the struct
   t.Minute = 11;
   t.Second = 17;
-cout << "\nCurrent Time: " << endl;
+cout << "\nCurrent Time: " << endl; //print current data in struct
 cout << t.Hour << ":" << t.Minute << ":" << t.Second << endl;
+
+  appDate a;
+  a.dayOfMonth = 17;
+  a.month = 5;
+  a.year = 95;
+  cout << "\nCurrent Year: " << endl;
+  cout << a.month << "/" << a.dayOfMonth << "/" << a.year << endl;
+
+event eOne;
+eOne.eventName = "Birthday of Johnny";
+eOne.isUrgent = true;
+//set the event day
+eOne.eventDate.dayOfMonth = 24; //instance.memberVariable
+eOne.eventDate.month = 2;
+eOne.eventDate.year = 2020;
+//set the event time
+eOne.eventTime = t; //use data from t to populate eOne.eventTime
+
+
 
   return 0;
 }
