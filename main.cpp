@@ -51,6 +51,22 @@ eOne.eventDate.year = 2020;
 //set the event time
 eOne.eventTime = t; //use data from t to populate eOne.eventTime
 
+//print all elements of the event eOne, to the screen
+cout << "\nElements iin the event eOne: " << endl;
+cout << "Event name: " << eOne.eventName << endl;
+
+string status = "";
+eOne.isUrgent = true;
+status = (eOne.isUrgent) ? "yes" : "No";
+cout << "Is the event Urgent: " << status << endl;
+
+cout << "Day: " << eOne.eventDate.month << "/" 
+                << eOne.eventDate.dayOfMonth << "/" 
+                << eOne.eventDate.year;
+
+cout << "\nTime: " << eOne.eventTime.Hour << ":" 
+                  << eOne.eventTime.Minute << ":" 
+                  << eOne.eventTime.Second;
 
 
   return 0;
